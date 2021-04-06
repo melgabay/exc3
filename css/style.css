@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;    
+    text-decoration: none;
+    
+}
+
+body { /* en gros la on dit que la taille de tout le body cest sur une page*/
+    width: 100%;
+    min-height: 100vh;
+}
+
+header, main, footer, nav, aside, section{
+    display: block; /* on a crée 6 block different*/
+}
+
+header, footer{
+    background-color: rgb(216, 213, 213); /* couleur du block header et footer*/
+
+}
+
+header img{
+    padding-left: 50%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+
+nav{
+    background-color: black;
+    /*padding: gauche, haute, droite, bas*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+nav ul {
+    list-style-type: none; /* enlever le point devant chaque mot */
+    display: flex;   /*alligner le menu*/
+}
+
+nav a{
+    font-family: Arial, sans-serif;
+    padding-left: 65px;
+    margin-right: 65px;
+    color: white;
+}
+
+nav a:hover{
+    color:blueviolet;
+}
+
+.menu{
+    padding-top: 15px; /* deplacer layout 2 et 3 vers en haut ou en bas*/
+    margin-left: 50px; /* deplacer les mots layout vers la droite*/
+}
+
+#selection{
+    background-color: #2F96B4;
+    height: 20px;
+    padding: 17.5px;
+
+}
+
+.element{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(184, 78, 78);
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+}
+
+.element:nth-child(1) /* On prend le deuxième bloc élément */{
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.element:nth-child(2) /* On prend le deuxième bloc élément */{
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.element:nth-child(3) /* On prend le deuxième bloc élément */{
+    margin-left: 430px;
+    margin-top: -230px;
+}
+
+.element:nth-child(4) /* On prend le deuxième bloc élément */{
+    margin-left: 430px;
+    margin-top: 30px;
+}
+
+.element1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(99, 139, 127);
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+}
+
+.element1:nth-child(1) /* On prend le deuxième bloc élément */{
+    margin-left: 700px;
+    margin-top: 180px;
+}
+
+
+.element1:nth-child(2) /* On prend le deuxième bloc élément */{
+    margin-left: 700px;
+    margin-top: 30px;
+}
+
+.element1:nth-child(3) /* On prend le deuxième bloc élément */{
+    margin-left: 830px;
+    margin-top: -230px;
+}
+
+.element1:nth-child(4) /* On prend le deuxième bloc élément */{
+    margin-left: 830px;
+    margin-top: 30px;
+}
+
+aside{   
+    background-color: rgba(216, 213, 213, 0.5); /* couleur du block header*/
+    display: block;
+    float: right;
+    margin-top: -670px;
+    width: 245px;
+    height: 690px;
+    margin-right: 70px;
+}
+
+aside section {
+    background-color: rgb(68, 68, 143);
+    height: 59px;
+    width: 148px;
+    margin-left: 85px;    
+    margin-top: 198px;
+}
+
+footer{
+    height: 50px;
+}
+
+#wrapper{
+    margin: 0px auto;
+    width: 1000px;
+}
+
+.nav2, .aside2{
+    float: left; /* mettre les elements les uns a cotes des autres*/
+    height: 757px;
+}
+
+.nav2{
+    width: 145px;
+    display: flex; /*affichage: souple*/
+}
+
+.aside2{
+    width: 257px;
+    background-color: rgba(216, 213, 213, 0.5); /* couleur du block header*/
+    flex-direction: column;
+    position: relative;
+    top:670px;
+    height: 787px;
+}
+
+.main2{
+    width: 586px;
+    height: 720px;
+    float:left;
+}
+
+#salope{
+    flex-direction: column;
+    position: relative;
+    right: 50px;
+
+}
+
+li{
+    height: 60px;
+    width: 200px;
+    bottom: 10px;
+}
+
+.layout2{
+    background-color: #2F96B4;
+    width: 160px;
+    position: relative;
+    left: 35px;
+    
+}
+
+#bas /*footer*/{
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+}
+
+p{
+    position: relative;
+    left: 30px;
+    bottom: 5px;
+}
+
+.element2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(184, 78, 78);
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+}
+
+.element2:nth-child(1) /* On prend le deuxième bloc élément */{
+    margin-left: 145px;
+    margin-top: 540px;
+}
+
+.element2:nth-child(2) /* On prend le deuxième bloc élément */{
+    margin-left: 145px;
+    margin-top: 30px;
+}
+
+.element2:nth-child(3) /* On prend le deuxième bloc élément */{
+    margin-left: 10px;
+    margin-top: -230px;
+}
+
+.element2:nth-child(4) /* On prend le deuxième bloc élément */{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#conteneur2{
+    width: 100px;
+    height: 100px;
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+    position: relative;
+    left: 280px;
+    bottom: 100px;
+}
+
+.carre1{
+    width: 270px;
+    height: 323px;
+    background-color: green;
+}
+
+.carre2{
+    width: 270px;
+    height: 253px;
+    background-color: green;
+    position:relative;
+    left: 300px;
+    bottom: 324px;
+}
+
+.carre3{
+    width: 270px;
+    height: 430px;
+    background-color: green;
+    position:relative;
+    bottom: 236px;
+}
+
+.carre4{
+    width: 270px;
+    height: 350px;
+    background-color: green;
+    position:relative;
+    bottom: 236px;
+    left: 300px;
+    bottom: 730px;
+}
